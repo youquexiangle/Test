@@ -1,0 +1,20 @@
+cd /usr/local/hadoop
+
+./sbin/start-dfs.sh
+
+网页地址：http://localhost:50070/
+
+
+
+/home/hadoop/桌面
+
+ctrl+shift+v复制
+
+注意版本号对没
+
+user（1）代表该文件夹下有一个文件
+hdfs://localhost:9000/user/hadoop/sort.txt
+
+
+
+针对只有ouput文件，但文件下没有任何东西，解决方法：更改input的输入文件，里面不能存在空格（任何地方），中文逗号。
