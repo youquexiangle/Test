@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ºÚ¿ÍµÛ¹úĞ§¹û</title>
+	<title>é»‘å®¢å¸å›½æ•ˆæœ</title>
 </head>
 
 <body>
@@ -21,21 +21,21 @@ var canvas = document.getElementById('canvas');
 
 		var fontSize = 16;
 		var columns = canvas.width/fontSize;
-		// ÓÃÓÚ¼ÆËãÊä³öÎÄ×ÖÊ±×ø±ê£¬ËùÒÔ³¤¶È¼´ÎªÁĞÊı
+		// ç”¨äºè®¡ç®—è¾“å‡ºæ–‡å­—æ—¶åæ ‡ï¼Œæ‰€ä»¥é•¿åº¦å³ä¸ºåˆ—æ•°
 		var drops = [];
-		//³õÊ¼Öµ
+		//åˆå§‹å€¼
 		for(var x = 0; x < columns; x++){
 			drops[x] = 1;
 		}
 
 		function draw(){
-			//ÈÃ±³¾°Öğ½¥ÓÉÍ¸Ã÷µ½²»Í¸Ã÷
+			//è®©èƒŒæ™¯é€æ¸ç”±é€æ˜åˆ°ä¸é€æ˜
 			ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
-			//ÎÄ×ÖÑÕÉ«
+			//æ–‡å­—é¢œè‰²
 			ctx.fillStyle = '#0F0';
 			ctx.font = fontSize + 'px arial';
-			//ÖğĞĞÊä³öÎÄ×Ö
+			//é€è¡Œè¾“å‡ºæ–‡å­—
 			for(var i = 0; i < drops.length; i++){
 				var text = texts[Math.floor(Math.random()*texts.length)];
 				ctx.fillText(text, i*fontSize, drops[i]*fontSize);
